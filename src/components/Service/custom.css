@@ -1,0 +1,284 @@
+*{
+  box-sizing:border-box;
+  font-family: serif , Times;
+}
+
+h1, h2, h3, h4, .h1, .h2, .h3, .h4, h1 *, h2 *, h3 *, h4 * {
+    font-family:  'Bree Serif', Helvetica, Arial, sans-serif;
+}
+
+nav{
+  font-family: sans-serif ;
+}
+
+a ,button , input[type='button']{
+  font-family:  Times,sans-serif ;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.alignLR{
+  text-align:left;
+}
+.R-alignLR{
+  text-align:right;
+}
+
+.trans1{
+  -webkit-transition:all 1s ease-out;
+  -o-transition:all 1s ease-out;
+  -moz-transition:all 1s ease-out;
+  transition:all 1s ease-out;
+  }
+
+  .trans2{
+  -webkit-transition:all 2s ease-out;
+  -o-transition:all 2s ease-out;
+  -moz-transition:all 2s ease-out;
+  transition:all 2s ease-out;
+  }
+  
+
+p.emphasis{
+  font-family:Consolas;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing:2px;
+}
+
+a:hover{
+  text-decoration:unset;
+}
+
+.center{
+ position: absolute;
+ left: 50%;
+ top: 50%;
+ transform: translate(-50%,-50%);
+ }
+
+  /*services h1 */
+.banner h1{
+  position: absolute;
+  z-index: 4;
+  line-height:2;
+}
+
+
+.resume {
+  color:#fff;
+  font-size:3em;
+  top: 21px;
+  left: 2px;
+  z-index:2;
+}
+
+.resume  span{
+  padding:5px;
+  display: inline-block;
+  background: rgba(214, 42, 42, 0.801);
+  -webkit-transform: skewX(-30deg); /* Safari */
+  transform: skewX(-30deg);
+  
+}
+
+
+/* end banner*/
+
+
+
+/* banner slider*/
+
+.card-view {
+  border-radius: 4px;
+  background-color: rgba(40, 167, 69, 0.51);
+  color:#000;
+  text-shadow: #aefbf5 2px 1px 2px;
+  border: 1px solid #28a745;
+  z-index:5;
+
+}
+/* end  banner slider*/
+
+
+
+/*typing-slider*/
+  
+  @keyframes cursor {
+    from, to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: black;
+    }
+  }
+  @keyframes typing {
+    from {
+      width: 100%;
+    }
+    90%, to {
+      width: 0;
+    }
+  }
+  @keyframes slide {
+    33.33333% {
+      font-size: 3rem;
+      letter-spacing: 3px;
+    }
+    to {
+      font-size: 0;
+      letter-spacing: 0;
+    }
+  }
+
+  @keyframes flash {
+    from, 50%, to {
+      opacity: 1;
+    }
+  
+    25%, 75% {
+      opacity: 0;
+    }
+  }
+  
+  .flash {
+    animation-name: flash;
+  }
+  
+  
+
+/*animations*/
+
+.animated {
+  animation-duration: 5s;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  animation-iteration-count: infinite;
+}
+
+
+
+  /*end animations*/
+
+
+
+
+/*animation*/
+
+/*service*/
+#service{
+  padding: 50px 0;
+}
+
+.ser-title{
+  line-height:27px;
+  padding: 5px;
+  color: rgb(204, 28, 28);
+}
+
+p.services-info{
+  padding: 0 17px;
+  color: #696969;
+}
+.ser-title {
+  -webkit-transition:all 3s ease-out;
+  -o-transition:all 3s ease-out;
+  -moz-transition:all 3s ease-out;
+  transition:all 3s ease-out;
+}
+
+.service-group  header{
+  width: 100%;
+}
+
+.service-group > header hr.botm-line{
+  position: relative;
+}
+.service-group:hover > header hr.botm-line{
+  background-color: rgb(241, 11, 11);
+
+}
+
+.service-group > header hr.botm-line::after{
+  width: 0;
+  background-color: #163ec7;
+  content: '';
+  position: absolute;
+  height: 2px;
+  transition: all 0.5s ease-in-out;
+}
+
+.service-group:hover > header hr.botm-line::after{
+  width: 100%;
+}
+
+.service-group:hover > header .ser-title  {
+  color: #163ec7;
+
+}
+
+
+.service{
+  position: relative;
+  padding: 8px;
+  margin:40px 4px;
+  box-shadow: 1px 1px 6px 1px #000;
+  -webkit-transition:all .5s ease-out;
+  -o-transition:all .5s ease-out;
+  -moz-transition:all .5s ease-out;
+  transition:all .5s ease-out;
+}
+.service:hover{
+  box-shadow: 1px 1px 6px 2px #000;
+}
+
+.service::before{
+  content: 'other services';
+  display: block;
+  width: 75px;
+  height: 74px;
+  border: 2px solid #878a8c;
+  border-radius: 50%;
+  position: absolute;
+  top: -35px;
+  left: -35px;
+  text-align: center;
+  background-color: #eef3f6;
+  box-shadow: -1px -1px 4px #000;
+  color: #08527f;
+  font-weight: bold;
+}
+
+
+.bg-site2{
+ background-color: #eef3f6;
+}
+
+.service-info .icon i {
+  width: 2em;
+  font-size: 3em;
+  padding: 16px;
+  text-shadow: 1px 104px 4px #b4bbc0,
+               2px 4px 7px #eee;
+  -webkit-transition:all 1.5s ease-in-out;
+  -o-transition:all  1.5s ease-in-out;
+  -moz-transition:all  1.5s ease-in-out;
+  transition:all  1.5s ease-in-out;
+
+}
+
+
+.service-info:hover > .icon i{
+  color:#cc1c1c;
+  text-shadow:-3px 3px 11px #eee;
+  cursor: pointer;
+}
+
+
+.service-info .icon-info h4{
+    color: #08526d;
+    margin: 3px;
+}
+/*end service*/
