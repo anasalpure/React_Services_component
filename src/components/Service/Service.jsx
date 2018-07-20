@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Service =({service})=>{ 
-        console.log(service);
+        
         return (
             <div className="col-md-4 col-sm-4">
                 <div className="service-info text-center">
